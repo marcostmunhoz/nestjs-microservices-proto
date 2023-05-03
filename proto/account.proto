@@ -24,13 +24,15 @@ message GetAccountRequest {
     string id = 1;
 }
 
+message Account {
+    string name = 1;
+    string email = 2;
+}
+
 message GetAccountResponse {
     int32 status = 1;
     repeated string error = 2;
-    message Account {
-        string name = 1;
-        string email = 2;
-    }
+    Account account 
 }
 
 message UpdateAccountRequest {
