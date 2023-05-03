@@ -32,7 +32,7 @@ message Account {
 message GetAccountResponse {
     int32 status = 1;
     repeated string error = 2;
-    Account account 
+    Account account = 3;
 }
 
 message UpdateAccountRequest {
