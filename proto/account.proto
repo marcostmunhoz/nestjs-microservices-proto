@@ -17,11 +17,11 @@ message RegisterRequest {
 message RegisterResponse {
     int32 status = 1;
     repeated string error = 2;
-    int32 id = 3;
+    string id = 3;
 }
 
 message GetAccountRequest {
-    int32 id = 1;
+    string id = 1;
 }
 
 message GetAccountResponse {
@@ -34,7 +34,7 @@ message GetAccountResponse {
 }
 
 message UpdateAccountRequest {
-    int32 id = 1;
+    string id = 1;
     string name = 2;
     string email = 3;
 }
